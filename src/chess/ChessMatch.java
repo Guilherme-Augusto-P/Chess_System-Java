@@ -53,7 +53,7 @@ public class ChessMatch {
 
         }
         if (!board.piece(position).isThereAnyPossibleMove()) {
-            throw new ClassCastException("There is no possible moves for the chosen piece.");
+            throw new ChessException("There is no possible moves for the chosen piece."); 
         }
     }
 
